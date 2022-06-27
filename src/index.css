@@ -10,6 +10,8 @@
   --color-primary: #7F2607;
   --color-primary-dark: #451602;
   --color-white: #FFFDFB;
+  --color-black: #262526;
+  --color-black-light: #323132;
 }
 
 html {
@@ -20,4 +22,5 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.7;
+  background-color: var(--color-black);
 }

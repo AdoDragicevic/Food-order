@@ -1,8 +1,11 @@
-import Nav from "./components/layout/nav/Nav";
+import Page from "./components/layout/page/Page";
+import Header from "./components/layout/header/Header";
 
 function App() {
   return (
-    <Nav />
+    <Page>
+      <Header />
+    </Page>
   );
 }
 

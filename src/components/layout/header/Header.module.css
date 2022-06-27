@@ -1,0 +1,12 @@
+.header {
+  position: relative;
+}
+
+.bg-img {
+  background-image: url("../../../img/meals.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
+}
