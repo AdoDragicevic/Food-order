@@ -2,8 +2,8 @@ import HeaderAbout from "./headerAbout/HeaderAbout";
 import css from "./Header.module.css";
 
 const Header = () => (
-  <header className={css.header}>
-    <div className={css["bg-img"]} />
+  <header className={css.root}>
+    <div />
     <HeaderAbout />
   </header>
 )

@@ -1,4 +1,4 @@
-.nav {
+.root {
   height: 6rem;
   width: 100vw;
   padding: 0 10vw;
@@ -12,7 +12,7 @@
   z-index: 1000;
 }
 
-.nav h2 {
+.root h2 {
   color: var(--color-white);
   font-size: 2.5rem;
 }

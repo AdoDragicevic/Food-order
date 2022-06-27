@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.root h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.root p {
+  font-size: 1.3rem;
+}
+
+.root h4 {
+  font-size: 1.4rem;
+  color: rgb(172, 113, 2);
+}

@@ -1,12 +1,14 @@
-.header {
+.root {
+  min-height: 45rem;
   position: relative;
 }
 
-.bg-img {
+.root div {
+  z-index: -10;
+  min-height: 40rem;
   background-image: url("../../../img/meals.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  min-height: 50vh;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 90%);
 }

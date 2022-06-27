@@ -1,6 +1,7 @@
-.header-about {
+.root {
   width: 90%;
   max-width: 65rem;
+  margin: -20rem auto 0 auto;
   background-color: var(--color-black-light);
   color: var(--color-white);
   padding: 2rem;
@@ -8,17 +9,17 @@
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.header-about h2 {
+.root h2 {
   text-transform: capitalize;
   font-size: 2.8rem;
 }
 
-.header-about p {
+.root p {
   margin-top: 1.5rem;
   font-size: 1.6rem;
 }

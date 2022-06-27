@@ -1,0 +1,8 @@
+.root {
+  list-style: none;
+  max-width: 80rem;
+  background-color: var(--color-white);
+  border-radius: 3rem;
+  padding: 1rem 2.5rem;
+  margin: 4rem auto;
+}

@@ -1,7 +1,7 @@
 import css from "./HeaderAbout.module.css";
 
 const HeaderAbout = () => (
-  <article className={css["header-about"]}>
+  <article className={css.root}>
     <h2>Delicious food deliveder to you</h2>
     <p>
       Choose your favorite meal from our broad selection of meals and enjoy

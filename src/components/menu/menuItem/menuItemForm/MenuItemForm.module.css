@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.root div {
+  margin-bottom: .5rem;
+}
+
+.root label {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.root input {
+  min-width: 4rem;
+  max-width: 4rem;
+  padding-left: .4rem;
+}
