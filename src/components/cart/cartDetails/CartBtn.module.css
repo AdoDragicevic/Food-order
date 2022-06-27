@@ -1,0 +1,33 @@
+.cart-btn {
+  height: 4rem;
+  padding: 0 3.5rem;
+  border-radius: 100px;
+  background-color: var(--color-primary-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all .2s ease;
+  font-size: 1.2rem;
+}
+
+.cart-btn:hover {
+  background-color: #270E01;
+}
+
+.cart-btn__title {
+  margin: 0 1rem 0 .5rem;
+}
+
+.cart-btn__num {
+  background-color: var(--color-primary);
+  padding: .5rem 1.5rem;
+  border-radius: 100px;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
