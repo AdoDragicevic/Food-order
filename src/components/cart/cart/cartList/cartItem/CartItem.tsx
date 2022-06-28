@@ -11,8 +11,13 @@ const CartItem = ({id, name, price, quantity }: CartItemProps) => {
 
   const dispatch = useContext(CartDispatch);
 
-  const handleRemoveItem = () => dispatch({ type: CartReducerActionType.REMOVE, id });
-  const handleAddItem = () => dispatch({ type: CartReducerActionType.ADD, id });
+  const handleRemoveItem = () => {
+    dispatch({ type: CartReducerActionType.UPDATE_ITEM_QUANTITY, id, quantity: -1 });
+  }
+  
+  const handleAddItem = () => {
+    dispatch({ type: CartReducerActionType.UPDATE_ITEM_QUANTITY, id, quantity: 1 });
+  }
 
   return (
     <li className={css.root}>

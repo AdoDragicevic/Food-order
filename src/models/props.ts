@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { FormEvent, ReactNode } from "react";
 import { Cart, CartItem } from "./cart";
 import { MenuItem } from "./menu";
 
@@ -6,7 +6,7 @@ export interface ChildrenProp {
   children: ReactNode;
 }
 
-export type MenuItemProps = MenuItem;
+export interface MenuItemProps extends MenuItem {}
 
 export interface MenuItemDetailsProps {
   name: string;
@@ -14,14 +14,12 @@ export interface MenuItemDetailsProps {
   price: number;
 }
 
-export interface MenuItemFormProps {
-  id: string;
-}
+export interface MenuItemFormProps extends MenuItem {}
 
 export interface ButtonProps extends ChildrenProp{
   size: "sm" | "md" | "lg";
   bg: "fill" | "empty";
-  onClick: () => void;
+  onClick: (e: any) => void;
 }
 
 export interface ModalProps extends ChildrenProp{

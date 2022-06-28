@@ -12,13 +12,14 @@ const Cart = ({ onClose }: CartProps) => {
 
   const cart = useContext(CartCtx);
   const price = getTotalCartPrice(cart);
+  const formatedPrice = parseFloat(price.toString()).toFixed(2);
 
-  const handleOrder = () => console.log("something was ordered");
+  const handleOrder = () => console.log(cart);
 
   return (
     <article className={css.root} onClick={e => e.stopPropagation()}>
       <CartList cart={cart} />
-      <TotalAmount>${price}</TotalAmount>
+      <TotalAmount>${formatedPrice}</TotalAmount>
       <CartBtns onClose={onClose} onOrder={handleOrder} />
     </article>
   )

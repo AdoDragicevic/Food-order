@@ -1,14 +1,24 @@
-import { useRef } from "react";
+import { FormEvent, useRef } from "react";
 import Button from "../../../UI/button/Button";
 import { MenuItemFormProps } from "../../../../models/props";
 import css from "./MenuItemForm.module.css";
+import { useContext } from "react";
+import { CartDispatch } from "../../../../contexts/cart-ctx";
+import { CartReducerActionType } from "../../../../models/reducers";
 
-const MenuItemForm = ({ id }: MenuItemFormProps) => {
+const MenuItemForm = (props: MenuItemFormProps) => {
 
   const amountRef = useRef<HTMLInputElement>(null);
+  const dispatch = useContext(CartDispatch);
+
+  const handleAddToCart = (e: FormEvent) => {
+    e.preventDefault();
+    const quantity = +amountRef.current!.value;
+    dispatch({ type: CartReducerActionType.ADD_ITEM, item: props, quantity });
+  }
 
   return (
-    <form className={css.root} action="">
+    <form className={css.root}>
       <div>
         <label htmlFor="amount">Amount</label>
         <input 
@@ -21,7 +31,7 @@ const MenuItemForm = ({ id }: MenuItemFormProps) => {
           ref={amountRef} 
         />
       </div>
-      <Button size="md" bg="fill" onClick={() => {}}>
+      <Button size="md" bg="fill" onClick={handleAddToCart}>
         + Add
       </Button>
     </form>

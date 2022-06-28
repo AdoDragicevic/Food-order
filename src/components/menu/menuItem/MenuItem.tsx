@@ -7,7 +7,7 @@ const MenuItem = (props: MenuItemProps) => {
   return (
     <li className={css.root}>
       <MenuItemDetails {...props} />
-      <MenuItemForm id={props.id} />
+      <MenuItemForm {...props} />
     </li>
   )
 }
