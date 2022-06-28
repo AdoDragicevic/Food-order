@@ -1,6 +1,6 @@
 import { MenuItem } from "./menu";
 
-interface CartItem extends MenuItem {
+export interface CartItem extends MenuItem {
   quantity: number;
 }
 

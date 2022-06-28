@@ -1,0 +1,24 @@
+.root {
+  
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: .5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 	800;
+  color: var(--color-primary-dark);
+}
+
+.quantity {
+  margin-left: 2rem;
+  border: .5px solid #eee;
+  border-radius: 3px;
+  padding: 0 .8rem;
+  font-size: 1.2rem;
+}

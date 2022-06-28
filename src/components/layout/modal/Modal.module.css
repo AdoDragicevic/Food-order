@@ -9,7 +9,7 @@
   animation: fadeIn .3s ease;
 }
 
-.root main {
+.root > * {
   position: absolute;
   top: 50%;
   left: 50%;

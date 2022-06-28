@@ -3,7 +3,7 @@ import Button from "../../../UI/button/Button";
 import { MenuItemFormProps } from "../../../../models/props";
 import css from "./MenuItemForm.module.css";
 
-const MenuItemForm = ({ id}: MenuItemFormProps) => {
+const MenuItemForm = ({ id }: MenuItemFormProps) => {
 
   const amountRef = useRef<HTMLInputElement>(null);
 
@@ -21,7 +21,7 @@ const MenuItemForm = ({ id}: MenuItemFormProps) => {
           ref={amountRef} 
         />
       </div>
-      <Button type="submit" size="md">
+      <Button size="md" bg="fill" onClick={() => {}}>
         + Add
       </Button>
     </form>

@@ -1,0 +1,8 @@
+.root {
+  max-height: 80vh;
+  overflow-y: auto;
+  min-width: 50rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-white);
+  padding: 1.5rem;
+}

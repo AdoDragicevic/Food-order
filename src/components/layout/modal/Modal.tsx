@@ -4,7 +4,7 @@ import css from "./Modal.module.css";
 
 const Modal = ({ children, onClick }: ModalProps) => (
   <div className={css.root} onClick={onClick}>
-    <main>{children}</main>
+    {children}
   </div>
 );
 
